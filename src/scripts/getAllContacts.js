@@ -5,7 +5,7 @@ export const getAllContacts = async () => {
     const data = await readContacts();
     return JSON.parse(data);
   } catch (error) {
-    console.log('Error while getting contacts: ', error.message);
+    console.error('Error while getting contacts: ', error.message);
   }
 };
 

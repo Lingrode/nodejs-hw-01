@@ -6,7 +6,7 @@ export const countContacts = async () => {
     const contacts = JSON.parse(data);
     return `Total contacts: ${contacts.length}`;
   } catch (error) {
-    console.log('Error while counting contacts: ', error.message);
+    console.error('Error while counting contacts: ', error.message);
   }
 };
 
