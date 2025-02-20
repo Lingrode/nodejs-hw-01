@@ -13,7 +13,7 @@ export const removeLastContact = async () => {
 
     const removedContact = contacts.pop();
 
-    await writeContacts(JSON.stringify(contacts));
+    await writeContacts(contacts);
     console.log('Removed contact:\n', removedContact);
   } catch (error) {
     console.error('Error while removing contact: ', error.message);

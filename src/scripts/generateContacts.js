@@ -13,7 +13,7 @@ const generateContacts = async (number) => {
 
     const updatedContacts = [...contacts, ...newContacts];
 
-    await writeContacts(JSON.stringify(updatedContacts));
+    await writeContacts(updatedContacts);
 
     console.log('Contacts successfully generated!');
   } catch (error) {

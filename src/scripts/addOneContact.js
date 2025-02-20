@@ -9,7 +9,7 @@ export const addOneContact = async () => {
 
     const newContacts = [...contacts, createFakeContact()];
 
-    await writeContacts(JSON.stringify(newContacts));
+    await writeContacts(newContacts);
 
     console.log('Contact added succefully!');
   } catch (error) {

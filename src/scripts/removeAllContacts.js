@@ -11,7 +11,7 @@ export const removeAllContacts = async () => {
       return;
     }
 
-    await writeContacts(JSON.stringify([]));
+    await writeContacts([]);
     console.log('Contacts removed!');
   } catch (error) {
     console.error('Error while deleting contacts: ', error.message);
